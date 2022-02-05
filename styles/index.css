@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.block {
+.block-container {
   background-color: rgb(77, 4, 77);
   width: 1152px;
   height: 700px;
@@ -16,7 +16,7 @@
 
 .card {
   display: flex;
-  background-color: orange;
+  background-color: #F48C06;
   width: 468px;
   height: 160px;
   border-radius: 5px;
@@ -69,9 +69,42 @@
 }
 
 .square--three {
-  margin: 0px;
+  margin: 20px;
 }
 
 .square--four {
   flex-grow: 1;
+}
+
+.block-container--two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.block {
+  background-color: #03071E;
+  width: 273px;
+  height: 220px;
+  margin: 20px;
+}
+
+.block__one {
+
+}
+
+.block__two {
+  background-color: #6A040F;
+}
+
+.block__three {
+
+}
+
+.block__four {
+  background-color: #6A040F;
+}
+
+.block__five {
+
 }
