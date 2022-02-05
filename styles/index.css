@@ -1,10 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 
 .block-container {
-  background-color: rgb(77, 4, 77);
+  background-color: #370617;
   width: 1152px;
   height: 700px;
   margin: 20px;
@@ -52,7 +53,7 @@
 }
 
 .square {
-  background-color: red;
+  background-color: #9D0208;
   display: flex;
   width: 70px;
   height: 70px;
@@ -60,29 +61,49 @@
   border-radius: 5px;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
 .square--one {
   align-self: flex-end;
 }
 
 .square--two {
-  align-self: flex-end;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: stretch;
+  margin: 15px 45px;
 }
 
 .square--three {
-  margin: 20px;
+  justify-content: center;
+  height: 55px;
 }
 
 .square--four {
+  padding: 0 45px 0 45px;
+}
+
+.square--five {
   flex-grow: 1;
 }
 
 .block-container--two {
+  background-color: #FAA307;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-content: center;
 }
 
 .block {
+  display: flex;
   background-color: #03071E;
   width: 273px;
   height: 220px;
@@ -90,21 +111,41 @@
 }
 
 .block__one {
-
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .block__two {
   background-color: #6A040F;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  align-content: flex-start;
 }
 
 .block__three {
-
+  align-content: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .block__four {
   background-color: #6A040F;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .block__five {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
 
+.circle {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: #748CAB;
+  border-radius: 50%;
+  margin: 10px;
 }
