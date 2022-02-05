@@ -4,6 +4,8 @@
   align-content: center;
 }
 
+/* Styling for the block with squares: */
+
 .block-container {
   background-color: #370617;
   width: 1152px;
@@ -12,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 30px;
+  padding: 40px;
 }
 
 .card {
@@ -31,6 +33,7 @@
 
 .card__second {
   justify-content: center;
+  align-content: stretch;
 }
 
 .card__third {
@@ -45,6 +48,7 @@
 .card__fifth {
   justify-content: space-around;
   align-items: center;
+  align-content: stretch;
 }
 
 .card__sixth {
@@ -71,35 +75,47 @@ p {
 }
 
 .square--one {
-  align-self: flex-end;
+  align-content: stretch;
+  height: auto;
 }
 
 .square--two {
-  align-self: flex-start;
-  justify-content: center;
-  align-items: stretch;
-  margin: 15px 45px;
+  align-self: flex-end;
 }
 
 .square--three {
   justify-content: center;
-  height: 55px;
+  align-self: stretch;
+  height: auto;
+  margin: 15px 45px;
+  padding-top: 35px;
 }
 
 .square--four {
-  padding: 0 45px 0 45px;
+  justify-content: center;
+  height: 55px;
 }
 
 .square--five {
+  margin-left: 50px;
+}
+
+.square--six {
+  margin-right: 50px;
+}
+
+.square--seven {
   flex-grow: 1;
 }
+
+/* Styling for the block with circles: */
 
 .block-container--two {
   background-color: #FAA307;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
 }
 
 .block {
